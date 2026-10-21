@@ -3,7 +3,7 @@
   "name": "count-numbers",
   "title": "Count Numbers",
   "description": "A simple but powerful number counter!",
-  "icon": "extension_icon.png",
+  "icon": "assets/extension_icon.png",
   "author": "almatkai",
   "categories": [
     "Fun",
