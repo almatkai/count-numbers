@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "id": "com.tezbar.native.count-numbers",
+  "slug": "count-numbers",
+  "name": "Count Numbers",
+  "version": "0.1.0",
+  "description": "A simple but powerful number counter! Original Raycast extension (2021); Tezbar port by almatkai (2026).",
+  "icon": "/extensions/icons/count-numbers.png",
+  "runtime": "rust",
+  "replaces": [
+    "raycast.count-numbers"
+  ],
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "commands": [
+    {
+      "name": "count-numbers",
+      "title": "Count Numbers",
+      "description": "Count numbers.",
+      "mode": "view",
+      "platforms": [
+        "macOS",
+        "Windows"
+      ],
+      "runtime": "rust"
+    }
+  ],
+  "verification": [
+    {
+      "platform": "macOS",
+      "state": "not-run"
+    },
+    {
+      "platform": "Windows",
+      "state": "not-run"
+    }
+  ]
+}
