@@ -1,0 +1,708 @@
+{
+  "sourceSha256": "031da696beb4863e24e55a6bb22a28cc359b8360d4d638ad3be0cadc79053396",
+  "parses": [
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "",
+        "increment": "",
+        "modulo": ""
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 0,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "0",
+        "increment": "0",
+        "modulo": "0"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 0,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "-0",
+        "increment": "-0",
+        "modulo": "-0"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 0,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "0.9",
+        "increment": "0.9",
+        "modulo": "0.9"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 0,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "-0.9",
+        "increment": "-0.9",
+        "modulo": "-0.9"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 0,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "junk",
+        "increment": "junk",
+        "modulo": "junk"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 0,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "NaN",
+        "increment": "NaN",
+        "modulo": "NaN"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 0,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "Infinity",
+        "increment": "Infinity",
+        "modulo": "Infinity"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 0,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "  +12cats",
+        "increment": "  +12cats",
+        "modulo": "  +12cats"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 12,
+            "increment": 12,
+            "modulo": 12
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "-12.99",
+        "increment": "-12.99",
+        "modulo": "-12.99"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": -12,
+            "increment": -12,
+            "modulo": -12
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "12e3",
+        "increment": "12e3",
+        "modulo": "12e3"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 12,
+            "increment": 12,
+            "modulo": 12
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "0x10tail",
+        "increment": "0x10tail",
+        "modulo": "0x10tail"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 16,
+            "increment": 16,
+            "modulo": 16
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "-0Xf",
+        "increment": "-0Xf",
+        "modulo": "-0Xf"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": -15,
+            "increment": -15,
+            "modulo": -15
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "0b11",
+        "increment": "0b11",
+        "modulo": "0b11"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 0,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "08",
+        "increment": "08",
+        "modulo": "08"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 8,
+            "increment": 8,
+            "modulo": 8
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "﻿-19x",
+        "increment": "﻿-19x",
+        "modulo": "﻿-19x"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": -19,
+            "increment": -19,
+            "modulo": -19
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "12",
+        "increment": "12",
+        "modulo": "12"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 0,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "9007199254740993",
+        "increment": "9007199254740993",
+        "modulo": "9007199254740993"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 9007199254740992,
+            "increment": 9007199254740992,
+            "modulo": 9007199254740992
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "0x20000000000001",
+        "increment": "0x20000000000001",
+        "modulo": "0x20000000000001"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 9007199254740992,
+            "increment": 9007199254740992,
+            "modulo": 9007199254740992
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "input": {
+        "name": "<Counter> & [name]",
+        "count": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "increment": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "modulo": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "<Counter> & [name]",
+            "count": 1e+308,
+            "increment": 1e+308,
+            "modulo": 1e+308
+          }
+        ],
+        "currentCounter": 0
+      }
+    }
+  ],
+  "arithmetic": [
+    {
+      "data": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 0,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      },
+      "reverse": false,
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 1,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "data": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 0,
+            "increment": 1,
+            "modulo": 5
+          }
+        ],
+        "currentCounter": 0
+      },
+      "reverse": true,
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": -1,
+            "increment": 1,
+            "modulo": 5
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "data": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": -4,
+            "increment": 1,
+            "modulo": 5
+          }
+        ],
+        "currentCounter": 0
+      },
+      "reverse": true,
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 0,
+            "increment": 1,
+            "modulo": 5
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "data": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 0.1,
+            "increment": 0.2,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      },
+      "reverse": false,
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 0.30000000000000004,
+            "increment": 0.2,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "data": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 100000000000000000000,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      },
+      "reverse": false,
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 100000000000000000000,
+            "increment": 1,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "data": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 5,
+            "increment": -2,
+            "modulo": -4
+          }
+        ],
+        "currentCounter": 0
+      },
+      "reverse": false,
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 3,
+            "increment": -2,
+            "modulo": -4
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "data": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 4,
+            "increment": 2,
+            "modulo": 5
+          }
+        ],
+        "currentCounter": 0
+      },
+      "reverse": false,
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 1,
+            "increment": 2,
+            "modulo": 5
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "data": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": -6,
+            "increment": 1,
+            "modulo": 5
+          }
+        ],
+        "currentCounter": 0
+      },
+      "reverse": false,
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 0,
+            "increment": 1,
+            "modulo": 5
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "data": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 7,
+            "increment": 0,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      },
+      "reverse": false,
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 7,
+            "increment": 0,
+            "modulo": 1
+          }
+        ],
+        "currentCounter": 0
+      }
+    },
+    {
+      "data": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 2.5,
+            "increment": 0.5,
+            "modulo": 2.25
+          }
+        ],
+        "currentCounter": 0
+      },
+      "reverse": true,
+      "expected": {
+        "counters": [
+          {
+            "id": 0,
+            "name": "Counter",
+            "count": 2,
+            "increment": 0.5,
+            "modulo": 2.25
+          }
+        ],
+        "currentCounter": 0
+      }
+    }
+  ],
+  "create": {
+    "counters": [
+      {
+        "id": 0,
+        "name": "Counter",
+        "count": 0,
+        "increment": 1,
+        "modulo": 1
+      },
+      {
+        "id": 1,
+        "name": "Created",
+        "count": -3,
+        "increment": 1,
+        "modulo": 16
+      }
+    ],
+    "currentCounter": 1
+  },
+  "deleted": {
+    "counters": [
+      {
+        "id": 0,
+        "name": "Counter",
+        "count": 0,
+        "increment": 1,
+        "modulo": 1
+      }
+    ],
+    "currentCounter": 0
+  }
+}

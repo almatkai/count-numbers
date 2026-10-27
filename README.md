@@ -14,3 +14,7 @@ With a beautiful and intuitive interface, simply press Enter to start counting!
 ## Options
 - Increment: The number to increment by. Default is 1.
 - Modulo: The maximum number before resetting to 0. Default is 1.
+
+## Native V2
+
+See [the Rust Native V2 library](v2/README.md) for host integration, behavior and tests.
